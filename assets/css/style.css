@@ -432,6 +432,7 @@ body {
 
 
 .slick-prev {
+    /* position: absolute; */
 
 }
 .slick-next {

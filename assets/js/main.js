@@ -10,7 +10,7 @@ $(document).ready(function(){
         dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<span type="button" class="slick-prev"><span></span></span>',
-        nextArrow: '<span type="button" class="slick-next"><span></span></span>',
+        prevArrow: '<span type="button" class="slick-prev"><span><i class="fas fa-arrow-right"></i></span></span>',
+        nextArrow: '<span type="button" class="slick-next"><span><i class="fas fa-arrow-left"></i></span></span>',
     });
   });	
