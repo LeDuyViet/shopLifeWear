@@ -389,8 +389,15 @@ body {
   visibility: visibility;
 }
 
+
+
+/* main */
+
+.main img {
+    width: 100%;
+}
+
 .multiple-banner__item {
-  width: 100%;
   position: relative;
 }
 
@@ -423,8 +430,9 @@ body {
   background-color: var(--dark);
 }
 
+
 .slick-prev {
-    
+
 }
 .slick-next {
 }
