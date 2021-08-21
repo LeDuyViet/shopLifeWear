@@ -13,4 +13,18 @@ $(document).ready(function(){
         prevArrow: '<span type="button" class="slick-prev"><span><i class="fas fa-arrow-right"></i></span></span>',
         nextArrow: '<span type="button" class="slick-next"><span><i class="fas fa-arrow-left"></i></span></span>',
     });
+    $('.product-hot__content--slide').slick({
+        infinite: false,
+        speed: 300,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        centerMode: false,
+        centerPadding: '0px',
+        arrows: true,
+        dots: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: '<span type="button" class="slick-prev"><span><i class="fas fa-chevron-right"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></span>',
+        nextArrow: '<span type="button" class="slick-next"><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-chevron-left"></i></span></span>',
+    });
   });	
