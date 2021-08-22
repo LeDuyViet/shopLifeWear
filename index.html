@@ -40,14 +40,14 @@
             <div class="header__top-right">
               <div class="header__top-language">
                 <span>Ngôn ngữ</span>
-                <ul>
+                <ul class="header__top-language__select">
                   <li>Tiếng Việt</li>
-                  <li>Tiếng Anh</li>
+                  <li>English</li>
                 </ul>
               </div>
               <div class="header__top-account">
                 <span><i class="fas fa-user-circle"></i></span>
-                <ul>
+                <ul class="login">
                   <li>
                     <a href="">Đăng nhập / Đăng ký</a>
                   </li>
@@ -66,6 +66,19 @@
             <div class="header__search">
               <div class="header__search-category">
                 <span class="header__search-category--trigger">All</span>
+                <ul class="dropdown-menu">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">Thời trang nam</a></li>
+                  <li><a href="#">Thời trang nữ</a></li>
+                  <li><a href="#">Handbage</a></li>
+                  <li><a href="#">Đồng hồ nữ</a></li>
+                  <li><a href="#">Đồ trẻ em</a></li>
+                  <li><a href="#">Thời trang nam</a></li>
+                  <li><a href="#">Thời trang nữ</a></li>
+                  <li><a href="#">Handbage</a></li>
+                  <li><a href="#">Đồng hồ nữ</a></li>
+                  <li><a href="#">Đồ trẻ em</a></li>
+                </ul>
               </div>
               <div class="header__search-input">
                 <input type="text" />
@@ -77,19 +90,31 @@
               </div>
             </div>
             <div class="header__cart">
-              <div class="header__cart-icon">
+              <div class="header__cart__icon">
                 <i class="fas fa-cart-plus">
-                  <span class="header__cart-count">0</span>
+                  <span class="header__cart__icon__count">0</span>
                 </i>
+              </div>
+              <div class="header__cart__content">
+                <div class="header__cart__content__container">
+                  <div class="header__cart__content__heading">
+                    <h2>giỏ hàng của bạn</h2>
+                    <a href="#" class="close"><i class="fas fa-times"></i></a>
+                  </div>
+                  <div class="header__cart__content__content">
+                    <p>Không có sản phẩm nào trong giỏ hàng</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="header__menu">
-          <div class="container header__menu-container">
+          <div class="container header__menu__container">
             <div class="header__menu-left">
               <a href="">Thời trang nữ</a>
-              <div class="sub-menu-container">
+              <div class="header__menu-left__container">
+              <div class="container sub-menu-container">
                 <div class="sub-menu-col">
                   <ul>
                     <li class="sub-menu-title"><a href="">Áo</a></li>
@@ -143,6 +168,7 @@
                 </div>
               </div>
             </div>
+            </div>
             <div class="header__menu-right">
               <a href="">on sale now</a>
             </div>
@@ -150,8 +176,10 @@
         </div>
       </div>
       <div class="header__menu--fade"></div>
+<!-- MAIN -->
       <div class="main">
-        <div class="container">
+        <!-- Banner -->
+        <div class="container banner">
           <div class="single__banner">
             <a href="#">
               <img src="./assets/img/home1.jpg" alt="" />
@@ -159,7 +187,6 @@
           </div>
           <!-- slider -->
           <div class="multiple-banner">
-
             <div class="multiple-banner__item">
               <img src="./assets/img/home2.jpg" alt="" />
               <div class="multiple-banner__item-des">
@@ -192,14 +219,16 @@
             </div>
             
           </div>
-          <!-- slider -->
+          <!-- slider (end) -->
           <div class="single__banner">
             <a href="#">
               <img src="./assets/img/home4.jpg" alt="" />
             </a>
           </div>
         </div>
-        <div class="product-hot">
+        <!-- Banner (end) -->
+      <!-- product-hot -->
+      <div class="product-hot">
         <div class="container ">
             <div class="product-hot__heading">
                 <h2 class="title">Danh mục nổi bật</h2>
@@ -331,9 +360,447 @@
             </div>
         </div>
     </div>
-
+    <!-- Product-hot end -->
+    <!-- Product start -->
+    <div class="product container">
+      <div class="product__sale">
+        <div class="product__sale-item">
+          <a href="#"><img src="./assets/img/sale1.png" alt=""></a>
+        </div>
+        <div class="product__sale-item">
+          <a href="#"><img src="./assets/img/sale2.png" alt=""></a>
+        </div>
+      </div>
+      <div class="product__for-you">
+        <div class="product__for-you__heading">
+          <h2>dành cho bạn</h2>
+          <div><img src="./assets/img/danhchoban.png" alt=""></div>
+          <div class="space"></div>
+          <a href="#">Xem tất cả &nbsp;&nbsp;  <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="product__for-you__content">
+          <!-- Product-hot--slide start -->
+                <div class="product-hot__content--slide">
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <img src="./assets/img/1.jpg" alt="">
+                        </div>
+                        <div class="product-item__detail">
+                            <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                            <div class="product-item__detail-price">
+                                <span class="price">284.000₫</span>
+                                <span class="old_price">284.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <img src="./assets/img/2.jpg" alt="">
+                        </div>
+                        <div class="product-item__detail">
+                            <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                            <div class="product-item__detail-price">
+                                <span class="price">284.000₫</span>
+                                <span class="old_price">284.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <img src="./assets/img/3.jpg" alt="">
+                        </div>
+                        <div class="product-item__detail">
+                            <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                            <div class="product-item__detail-price">
+                                <span class="price">284.000₫</span>
+                                <span class="old_price">284.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <img src="./assets/img/4.jpg" alt="">
+                        </div>
+                        <div class="product-item__detail">
+                            <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                            <div class="product-item__detail-price">
+                                <span class="price">284.000₫</span>
+                                <span class="old_price">284.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <img src="./assets/img/5.jpg" alt="">
+                        </div>
+                        <div class="product-item__detail">
+                            <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                            <div class="product-item__detail-price">
+                                <span class="price">284.000₫</span>
+                                <span class="old_price">284.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <img src="./assets/img/6.jpg" alt="">
+                        </div>
+                        <div class="product-item__detail">
+                            <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                            <div class="product-item__detail-price">
+                                <span class="price">284.000₫</span>
+                                <span class="old_price">284.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <img src="./assets/img/7.jpg" alt="">
+                        </div>
+                        <div class="product-item__detail">
+                            <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                            <div class="product-item__detail-price">
+                                <span class="price">284.000₫</span>
+                                <span class="old_price">284.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <img src="./assets/img/8.jpg" alt="">
+                        </div>
+                        <div class="product-item__detail">
+                            <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                            <div class="product-item__detail-price">
+                                <span class="price">284.000₫</span>
+                                <span class="old_price">284.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <img src="./assets/img/9.jpg" alt="">
+                        </div>
+                        <div class="product-item__detail">
+                            <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                            <div class="product-item__detail-price">
+                                <span class="price">284.000₫</span>
+                                <span class="old_price">284.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <img src="./assets/img/10.jpg" alt="">
+                        </div>
+                        <div class="product-item__detail">
+                            <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                            <div class="product-item__detail-price">
+                                <span class="price">284.000₫</span>
+                                <span class="old_price">284.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          <!-- Product-hot--slide end -->
+        </div>
+      </div>
+      <div class="product__today">
+        <div class="product__today-heading">
+          <h2>gợi ý hôm nay</h2>
+          <div class="sub-title">
+            <span>black friday</span>
+            big sale
+          </div>
+          <a href="#">Xem tất cả &nbsp;&nbsp;  <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="product__today-content">
+          <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/1.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/2.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/3.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/4.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/5.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/6.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/7.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/8.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/9.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/10.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/6.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/7.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/8.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/9.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-item__img">
+                <img src="./assets/img/10.jpg" alt="">
+            </div>
+            <div class="product-item__detail">
+                <h3>Quầu âu nữ ống đứng 92WEAR, hai ly, thiết kế công sở thanh lịch tôn dáng QBW1137</h3>
+                <div class="product-item__detail-price">
+                    <span class="price">284.000₫</span>
+                    <span class="old_price">284.000₫</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="product__today-all-deal">
+          <a href="#">shop all deal</a>
+        </div>
       </div>
     </div>
+    <!-- Product end -->
+      </div>
+    </div>
+<!-- MAIN (end) -->
+<!-- FOOTER -->
+    <div class="footer">
+        <div class="footer__top container ">
+          <div class="footer__top__item">
+            <h1>hỗ trợ khách hàng</h1>
+            <div class="hotline">Hotline chăm sóc khách hàng: 1900-6035 (1000đ/phút , 8-21h kể cả T7, CN)</div>
+            <ul>
+              <li>Các câu hỏi thường gặp</li>
+              <li>Gửi yêu cầu hỗ trợ</li>
+              <li>Hướng dẫn đặt hàng</li>
+              <li>Phương thức vận chuyển</li>
+              <li>Chính sách đổi trả</li>
+              <li>Hướng dẫn trả góp</li>
+              <li>Chính sách hàng nhập khẩu</li>
+            </ul>
+          </div>
+          <div class="footer__top__item">
+            <h1>về tiki</h1>
+            <ul>
+              <li>Giới thiệu Tiki</li>
+              <li>Tuyển Dụng</li>
+              <li>Chính sách bảo mật thanh toán</li>
+              <li>Chính sách bảo mật thông tin cá nhân</li>
+              <li>Chính sách giải quyết khiếu nại</li>
+              <li>Điều khoản sử dụng</li>
+              <li>Giới thiệu Tiki Xu</li>
+              <li>Bán hàng doanh nghiệp</li>
+            </ul>
+          </div>
+          <div class="footer__top__item">
+            <h1>hợp tác và liên kết</h1>
+            <ul>
+              <li>Quy chế hoạt động Sàn GDTMĐT</li>
+              <li>Bán hàng cùng Tiki</li>
+            </ul>
+          </div>
+          <div class="footer__top__item">
+            <h1>phương thức thanh toán</h1>
+            <div class="thumb">
+              <div class="thumb__item">
+                <img src="./assets/img/payment1.png" alt="">
+              </div>
+              <div class="thumb__item">
+                <img src="./assets/img/payment2.png" alt="">
+              </div>
+              <div class="thumb__item">
+                <img src="./assets/img/payment3.png" alt="">
+              </div>
+              <div class="thumb__item">
+                <img src="./assets/img/payment4.png" alt="">
+              </div>
+              <div class="thumb__item">
+                <img src="./assets/img/payment5.png" alt="">
+              </div>
+              <div class="thumb__item">
+                <img src="./assets/img/payment6.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="footer__top__item">
+            <h1>kết nối với chúng tôi</h1>
+            <div class="thumb">
+              <div class="thumb__item">
+                <img src="./assets/img/facebook.png" alt="">
+              </div>
+              <div class="thumb__item">
+                <img src="./assets/img/youtube.png" alt="">
+              </div>
+              <div class="thumb__item">
+                <img src="./assets/img/zalo.png" alt="">
+              </div>
+            </div>
+            <div class="dowload-app">
+              <h2>tải ứng dụng</h2>
+              <div class="app-store">
+                <img src="./assets/img/appstore.png" alt="">
+              </div>
+              <div class="google-play">
+                <img src="./assets/img/googleplay.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom ">
+          <div class="container">
+            <div class="footer__bottom__item">
+              <p class="title"><span>Địa chỉ văn phòng:</span> 52 Út Tịch, phường 4, quận Tân Bình, thành phố Hồ Chí Minh
+                Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp
+                tại văn phòng hoặc trung tâm xử lý đơn hàng</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+<!-- FOOTER (end) -->
+    <!-- JS -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
