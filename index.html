@@ -13,6 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="./assets/fontawesome/fontawesome-free-5.15.4-web/css/all.min.css"
@@ -100,16 +103,17 @@
                   <span class="header__cart__icon__count">0</span>
                 </i>
               </div>
-              <div class="header__cart__content">
-                <div class="header__cart__content__container">
-                  <div class="header__cart__content__heading">
-                    <h2>giỏ hàng của bạn</h2>
-                    <a href="#" class="close"><i class="fas fa-times"></i></a>
-                  </div>
-                  <div class="header__cart__content__content">
-                    <p>Không có sản phẩm nào trong giỏ hàng</p>
-                  </div>
+              <div class="header__cart__content__container">
+                <div class="header__cart__content__heading">
+                  <h2>giỏ hàng của bạn</h2>
+                  <a href="#" class="close"><i class="fas fa-times"></i></a>
                 </div>
+                <div class="header__cart__content__content">
+                  <p>Không có sản phẩm nào trong giỏ hàng</p>
+                </div>
+              </div>
+              <div class="header__cart__content">
+                
               </div>
             </div>
           </div>
@@ -117,9 +121,10 @@
         <div class="header__menu">
           <div class="container header__menu__container">
             <div class="header__menu-left">
-              <a href="">Thời trang nữ</a>
+              <a class="header__menu-left__title" href="">Thời trang nữ</a>
               <div class="header__menu-left__container">
               <div class="container sub-menu-container">
+                <i class="menu-close-mobile fas fa-times "></i>
                 <div class="sub-menu-col">
                   <ul>
                     <li class="sub-menu-title"><a href="">Áo</a></li>
@@ -379,8 +384,8 @@
       <div class="product__for-you">
         <div class="product__for-you__heading">
           <h2>dành cho bạn</h2>
-          <div><img src="./assets/img/danhchoban.png" alt=""></div>
-          <div class="space"></div>
+          <div class="product__for-you__heading__img"><img src="./assets/img/danhchoban.png" alt=""></div>
+          <!-- <div class="space"></div> -->
           <a href="#">Xem tất cả &nbsp;&nbsp;  <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
         </div>
         <div class="product__for-you__content">
@@ -700,7 +705,8 @@
                 </div>
             </div>
         </div>
-        </div>
+      </div>
+      <div class="lds-dual-ring"></div>
         <div class="product__today-all-deal">
           <a href="#">shop all deal</a>
         </div>
